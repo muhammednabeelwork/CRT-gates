@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  
+  --color-brand-gold: #AB844C;
+  --color-brand-olive: #838C4A;
+  --color-brand-fresh: #4F9244;
+  --color-brand-emerald: #066D55;
+  
+  --color-dark-bg: #030303;
+  --color-glass-dark: rgba(10, 10, 10, 0.7);
+  --color-glass-gold: rgba(171, 132, 76, 0.05);
+}
+
+/* Custom CSS utilities for luxury exhibition theme */
+body {
+  background-color: #030303;
+  color: #f5f5f5;
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Glassmorphism Panels */
+.glass-panel {
+  background: rgba(8, 8, 8, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-glow {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(171, 132, 76, 0.15);
+  box-shadow: 0 10px 40px -10px rgba(171, 132, 76, 0.05);
+}
+
+/* Smooth high-end glowing classes */
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(171, 132, 76, 0.35);
+  border-color: rgba(171, 132, 76, 0.4) !important;
+}
+
+.glow-emerald {
+  box-shadow: 0 0 35px -5px rgba(6, 109, 85, 0.3);
+  border-color: rgba(6, 109, 85, 0.4) !important;
+}
+
+.glow-olive {
+  box-shadow: 0 0 35px -5px rgba(131, 140, 74, 0.3);
+  border-color: rgba(131, 140, 74, 0.4) !important;
+}
+
+.glow-fresh {
+  box-shadow: 0 0 35px -5px rgba(79, 146, 68, 0.3);
+  border-color: rgba(79, 146, 68, 0.4) !important;
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 12px rgba(171, 132, 76, 0.4);
+}
+
+/* Advanced Cinematic Image Reveal */
+.cinematic-zoom-in {
+  animation: subtleZoom 45s ease-in-out infinite alternate;
+}
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  100% {
+    transform: scale(1.08) translate(-5px, -5px);
+  }
+}
+
+/* Custom premium scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 3, 3, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(171, 132, 76, 0.25);
+  border-radius: 999px;
+  border: 1.5px solid rgba(3, 3, 3, 0.9);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(171, 132, 76, 0.5);
+}
+
+/* Utility layout tweaks */
+.luxury-tracking {
+  letter-spacing: 0.2em;
+}
