@@ -35,7 +35,7 @@ export default function App() {
     setCurrentPath(newPath);
   };
 
-  if (currentPath === "/display") {
+  if (currentPath.startsWith("/display")) {
     return <DisplayScreen />;
   }
 

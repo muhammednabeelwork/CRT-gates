@@ -196,26 +196,18 @@ export default function ControllerDashboard({ navigate }: { navigate: (path: str
         <input ref={fileInputRef} type="file" accept="image/*" className="hidden" onChange={handleFileChange} />
       </div>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-2">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-4">
         <p className="max-w-2xl text-sm text-white/80">Self‑Sufficient Sanitation Infrastructure.</p>
         <h1 className="text-6xl font-bold uppercase tracking-[0.25em] text-[#96f1c9]">CRT</h1>
-      </div>
-
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="flex items-center gap-6 pointer-events-auto">
-          <button
-            onClick={triggerPrev}
-            aria-label="Previous"
-            className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]"
-          >
+        <div className="flex items-center gap-6">
+          <button onClick={triggerPrev} aria-label="Previous" className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]">
             <ChevronLeft className="h-8 w-8" />
           </button>
-          <button
-            onClick={triggerNext}
-            aria-label="Next"
-            className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]"
-          >
+          <button onClick={triggerNext} aria-label="Next" className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]">
             <ChevronRight className="h-8 w-8" />
+          </button>
+          <button onClick={() => navigate('/display')} className="px-4 py-2 bg-[#066D55]/20 border border-[#066D55] rounded text-[#96f1c9]">
+            View Display
           </button>
         </div>
       </div>
