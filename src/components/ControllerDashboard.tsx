@@ -171,15 +171,6 @@ export default function ControllerDashboard({ navigate }: { navigate: (path: str
       }}
     >
       <div className="absolute inset-0 bg-black/42" />
-      <div className="absolute top-4 left-4 z-30">
-        <button
-          onClick={() => (window.location.href = BACK_URL)}
-          className="px-3 py-2 bg-[#066D55]/10 border border-[#066D55] rounded text-[#96f1c9]"
-        >
-          Back
-        </button>
-      </div>
-
       <div className="absolute top-4 right-4 z-30 flex items-center gap-2">
         <button
           onClick={() => fileInputRef.current?.click()}
@@ -196,21 +187,21 @@ export default function ControllerDashboard({ navigate }: { navigate: (path: str
         <input ref={fileInputRef} type="file" accept="image/*" className="hidden" onChange={handleFileChange} />
       </div>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-4">
-        <p className="max-w-2xl text-sm text-white/80">Self‑Sufficient Sanitation Infrastructure.</p>
-        <h1 className="text-6xl font-bold uppercase tracking-[0.25em] text-[#96f1c9]">CRT</h1>
-        <div className="flex items-center gap-6">
-          <button onClick={triggerPrev} aria-label="Previous" className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]">
-            <ChevronLeft className="h-8 w-8" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-4">
+          <h1 className="text-6xl font-bold uppercase tracking-[0.25em] text-[#96f1c9]">CRT</h1>
+          <p className="max-w-2xl text-sm text-white/80">Self‑Sufficient Sanitation Infrastructure.</p>
+          <button onClick={() => (window.location.href = BACK_URL)} className="px-3 py-2 bg-[#066D55]/10 border border-[#066D55] rounded text-[#96f1c9]">
+            Back
           </button>
-          <button onClick={triggerNext} aria-label="Next" className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]">
-            <ChevronRight className="h-8 w-8" />
-          </button>
-          <button onClick={() => navigate('/display')} className="px-4 py-2 bg-[#066D55]/20 border border-[#066D55] rounded text-[#96f1c9]">
-            View Display
-          </button>
+          <div className="flex items-center gap-6">
+            <button onClick={triggerPrev} aria-label="Previous" className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]">
+              <ChevronLeft className="h-8 w-8" />
+            </button>
+            <button onClick={triggerNext} aria-label="Next" className="p-6 rounded-full bg-black/60 border-2 border-[#066D55] text-[#96f1c9]">
+              <ChevronRight className="h-8 w-8" />
+            </button>
+          </div>
         </div>
-      </div>
 
       {isUploading && (
         <div className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-black/80 px-4 py-2 rounded text-sm">
