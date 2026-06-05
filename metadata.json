@@ -1,0 +1,6 @@
+{
+  "name": "Gate Display System",
+  "description": "Premium dual-screen interactive exhibition display system featuring an immersive TV signage screen and a futuristic tablet controller dashboard with real-time synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
