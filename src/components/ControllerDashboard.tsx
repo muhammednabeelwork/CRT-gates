@@ -197,8 +197,8 @@ export default function ControllerDashboard({ navigate }: { navigate: (path: str
       </div>
 
       <div className="absolute inset-x-0 top-[20%] z-20 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-3xl font-bold uppercase tracking-[0.25em] text-[#96f1c9]">MTU</h1>
-        <p className="mt-2 max-w-2xl text-sm text-white/80">Rapid Sanitation During Emergencies</p>
+        <h1 className="text-6xl font-bold uppercase tracking-[0.25em] text-[#96f1c9]">CRT</h1>
+        <p className="mt-6 max-w-2xl text-sm text-white/80">Self-Sufficient Sanitation Infrastructure.</p>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
