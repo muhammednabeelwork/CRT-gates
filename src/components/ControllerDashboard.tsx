@@ -198,7 +198,8 @@ export default function ControllerDashboard({ navigate }: { navigate: (path: str
 
       <div className="absolute inset-x-0 top-[20%] z-20 flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-6xl font-bold uppercase tracking-[0.25em] text-[#96f1c9]">CRT</h1>
-        <p className="mt-6 max-w-2xl text-sm text-white/80">Self-Sufficient Sanitation Infrastructure.</p>
+                <p className="mt-6 max-w-2xl text-sm text-white/80 text-center">Self-Sufficient Sanitation Infrastructure.</p>
+        <button className="mt-4 px-4 py-2 bg-[#066D55]/20 border border-[#066D55] rounded text-[#96f1c9] hover:bg-[#066D55]/30 transition">Learn More</button>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
